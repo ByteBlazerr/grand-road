@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Road Tashkent</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/">Grand Road</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Главный баннер -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Grand Road Tashkent</h1>
+            <p>Дороги будущего, построенные на технологиях и безопасности</p>
+            <a href="#about" class="btn-primary">Узнать больше</a>
+        </div>
+    </header>
+
+    <!-- О нас -->
+    <section id="about" class="section about-us">
+        <div class="container">
+            <div class="about-image">
+                <img src="{% static 'images/about-image.jpg' %}" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h2>О компании</h2>
+                <p>Компания "Grand Road Tashkent" — крупнейшее предприятие, созданное в сотрудничестве с Турцией, специализирующееся на строительстве автомобильных дорог и инфраструктуры в Центральной Азии.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <img src="{% static 'images/service1.jpg' %}" alt="Service 1">
+                    <h3>Строительство дорог</h3>
+                    <p>Проектирование и строительство дорог с использованием новейших технологий.</p>
+                </div>
+                <div class="service-item">
+                    <img src="{% static 'images/service2.jpg' %}" alt="Service 2">
+                    <h3>Проектирование</h3>
+                    <p>Проектирование магистралей и транспортных узлов для максимальной безопасности.</p>
+                </div>
+                <div class="service-item">
+                    <img src="{% static 'images/service3.jpg' %}" alt="Service 3">
+                    <h3>Капитальный ремонт</h3>
+                    <p>Восстановление и модернизация существующих дорожных объектов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Наши проекты</h2>
+            <div class="project-items">
+                <div class="project-item">
+                    <img src="{% static 'images/project1.jpg' %}" alt="Project 1">
+                    <h3>Проект 1</h3>
+                </div>
+                <div class="project-item">
+                    <img src="{% static 'images/project2.jpg' %}" alt="Project 2">
+                    <h3>Проект 2</h3>
+                </div>
+                <div class="project-item">
+                    <img src="{% static 'images/project3.jpg' %}" alt="Project 3">
+                    <h3>Проект 3</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Связаться с нами</h2>
+            <p>Свяжитесь с нами для получения консультаций по проектам и услугам.</p>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" required></textarea>
+                <button type="submit" class="btn-primary">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Grand Road Tashkent. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

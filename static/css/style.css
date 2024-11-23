@@ -1,0 +1,253 @@
+/* Сброс стандартных стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #000; /* Черный фон для всего сайта */
+    color: #fff; /* Белый текст для контраста */
+}
+
+/* Навигация */
+.navbar {
+    background-color: #000; /* Черный фон для навигации */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo a {
+    color: #FFD700; /* Желтый цвет для логотипа */
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    float: right;
+    margin-right: 30px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #FFD700; /* Желтый цвет для текста меню */
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/* Главный баннер */
+.main-header {
+    background: url("{% static 'images/header-background.jpg' %}") no-repeat center center/cover;
+    background-color: #000; /* Черный фон */
+    height: 100vh; /* Высота на весь экран */
+    display: flex;
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    text-align: center; /* Текст по центру */
+    width: 100%; /* 100% ширины */
+}
+
+/* Контейнер с контентом */
+.header-content {
+    display: flex;
+    flex-direction: column; /* Элементы вертикально */
+    justify-content: center; /* Центрируем по вертикали */
+    align-items: center; /* Центрируем по горизонтали */
+    text-align: center;
+    width: 100%; /* Ширина на 100% */
+    padding: 0 20px; /* Отступы */
+}
+
+/* Заголовок */
+.header-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Подзаголовок */
+.header-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px; /* Отступ снизу */
+}
+
+/* Кнопка */
+.btn-primary {
+    background-color: #FFD700;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e6b800;
+}
+
+
+/* Универсальный стиль для всех секций */
+.section {
+    padding: 80px 0;
+}
+
+/* О нас */
+.about-us {
+    background-color: #333; /* Темно-серый фон */
+}
+
+.about-us .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Желтый цвет заголовка */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #fff; /* Белый текст для контраста */
+    width: 50%;
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Услуги */
+.services {
+    background-color: #000; /* Черный фон */
+    color: #FFD700; /* Желтый текст */
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #333; /* Темно-серый фон для блоков */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.service-item h3 {
+    color: #FFD700; /* Желтый цвет заголовков */
+}
+
+/* Проекты */
+.projects {
+    background-color: #333; /* Темно-серый фон */
+    color: #fff;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.project-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #444; /* Немного светлее темно-серый */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-item h3 {
+    color: #FFD700; /* Желтые заголовки */
+}
+
+/* Контакты */
+.contact {
+    background-color: #000; /* Черный фон */
+    color: #FFD700; /* Желтый текст */
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #333; /* Темно-серый фон для форм */
+    color: #fff; /* Белый текст в полях */
+}
+
+.contact button {
+    background-color: #FFD700; /* Желтая кнопка */
+    color: black;
+    padding: 15px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #e6b800; /* Темно-желтый при наведении */
+}
+
+/* Футер */
+.footer {
+    background-color: #333; /* Темно-серый футер */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
